@@ -1,0 +1,45 @@
+.post {
+    margin: 1rem 0;
+    padding: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 0, 255, 0.8);
+    animation: animate-in 1s ease-out forwards;
+    border: 2px solid #FF00FF;
+}
+
+.post a {
+    text-decoration: none;
+}
+
+.author {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.text {
+    white-space: pre-wrap;
+    font-size: 1.25rem;
+    margin: 0.25rem 0 0 0;
+    color: #FFFFFF;
+    font-style: italic;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes animate-in {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
