@@ -37,5 +37,6 @@ export const loader = async ({params}) => {
     //const response = await fetch('http://localhost:8080/posts/' + params.id);
     //const resData = await response.json();
     //return resData.post;
-    return postData.posts.find(post => post.id === params.id);
+    //return postData.posts.find(post => post.id === params.id);
+    return null;
 }
